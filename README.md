@@ -83,6 +83,13 @@ You can install these dependencies using conda:
 - The code (`dp.py`) can be run directly.
 - Using the OS method to calculate the LLE of the our model.
 
+### Runge-Kutta dynamics
+-The code is almost the same as Experiments with RNN Learning Trajectories, except that it switches to Runge-Kutta iterative training.
+
+### Effective prediction time
+-The code obtains the error amount obtained by training under different data amounts, and calculates the effective prediction time T_pd corresponding to different error amounts
+
+
 ## Citation
 This code is the product of work carried out by the group of [PMI lab, Sun Yat-sen University](https://www.labxing.com/hphuang2018). If the code helps, consider giving us a shout-out in your publications.
 
