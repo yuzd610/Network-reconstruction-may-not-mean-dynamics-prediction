@@ -72,7 +72,7 @@ std_LLE = np.std(LLE, axis=1)
 
 
 
-plt.plot(G, mean_LLE, linestyle='dashed', color='blue', linewidth=3)  # 设置为蓝色虚线
+plt.plot(G, mean_LLE, linestyle='dashed', color='blue', linewidth=3)  
 plt.fill_between(G, mean_LLE - std_LLE, mean_LLE + std_LLE, color='blue', alpha=0.2)
 
 plt.xlabel('g', fontsize=40)
