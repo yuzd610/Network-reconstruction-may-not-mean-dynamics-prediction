@@ -89,22 +89,22 @@ fig, ax1 = plt.subplots()
 
 # Draw the first vector on the left axis
 ax1.plot(losses, color='r', label='Training Error', linewidth=3)
-ax1.set_xlabel('Epoch', fontsize=23)  # 增加字体大小
-ax1.set_ylabel('Training Error', color='r', fontsize=23)  # 增加字体大小
-ax1.tick_params(axis='y', labelcolor='r', labelsize=21)  # 增加刻度标签大小
+ax1.set_xlabel('Epoch', fontsize=23) 
+ax1.set_ylabel('Training Error', color='r', fontsize=23) 
+ax1.tick_params(axis='y', labelcolor='r', labelsize=21) 
 ax1.tick_params(axis='x', labelsize=21)
 # Create the right axis
 ax2 = ax1.twinx()
 
 # Draw the second vector on the right axis
 ax2.plot(weight_losses, color='g', label='Weight Distance', linewidth=3)
-ax2.set_ylabel('Weight Distance', color='g', fontsize=23)  # 增加字体大小
-ax2.tick_params(axis='y', labelcolor='g', labelsize=21)  # 增加刻度标签大小
+ax2.set_ylabel('Weight Distance', color='g', fontsize=23) 
+ax2.tick_params(axis='y', labelcolor='g', labelsize=21)  
 
 # Add a legend
 lines, labels = ax1.get_legend_handles_labels()
 lines2, labels2 = ax2.get_legend_handles_labels()
-ax2.legend(lines + lines2, labels + labels2, loc='upper right', fontsize=20)  # 增加图例字体大小
+ax2.legend(lines + lines2, labels + labels2, loc='upper right', fontsize=20)  
 plt.tight_layout()
 fig.savefig('plot.pdf')
 plt.show()
