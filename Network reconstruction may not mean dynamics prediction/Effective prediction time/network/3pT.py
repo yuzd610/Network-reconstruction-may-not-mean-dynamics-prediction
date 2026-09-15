@@ -93,11 +93,11 @@ std_LLE = np.std(T, axis=1)
 
 
 
-plt.plot(p, mean_LLE, linestyle='dashed', color='blue', linewidth=3)  # 设置为蓝色虚线
+plt.plot(p, mean_LLE, linestyle='dashed', color='blue', linewidth=3)  
 plt.fill_between(p, mean_LLE - std_LLE, mean_LLE + std_LLE, color='blue', alpha=0.2)
 
-plt.xlabel(r'$P$', fontsize=20)   # $\eta$ 用 LaTeX 渲染希腊字母
-plt.ylabel(r'$T_{pd}$', fontsize=20) # $T_{pd}$ 渲染带下标的 T
+plt.xlabel(r'$P$', fontsize=20)   
+plt.ylabel(r'$T_{pd}$', fontsize=20) 
 
 
 # Set the scale font size
