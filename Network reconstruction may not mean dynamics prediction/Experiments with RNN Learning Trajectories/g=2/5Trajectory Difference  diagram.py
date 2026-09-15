@@ -34,15 +34,15 @@ fig, ax = plt.subplots()
 
 # Draw some row data
 for i in range(3):
-    ax.plot(time, X_n_1[i, :], color=colors[i], linewidth=2, linestyle='-')  # 实线
-    ax.plot(time, X_n_2[i, :], color=colors[i], linewidth=2, linestyle='--')  # 虚线
+    ax.plot(time, X_n_1[i, :], color=colors[i], linewidth=2, linestyle='-')  
+    ax.plot(time, X_n_2[i, :], color=colors[i], linewidth=2, linestyle='--')  
 
 # Set axis labels and titles
 ax.set_xlabel('Time', fontsize=23)
 ax.set_ylabel('Activity', fontsize=23)
 
 # Set the tick label size
-ax.tick_params(axis='both', which='major', labelsize=22)  # 刻度标签大小
+ax.tick_params(axis='both', which='major', labelsize=22)  
 
 
 plt.tight_layout()
