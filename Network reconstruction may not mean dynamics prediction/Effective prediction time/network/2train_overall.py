@@ -109,7 +109,7 @@ plt.fill_between(p, mean_d_n - std_d_n, mean_d_n + std_d_n, color='blue', alpha=
 plt.xlabel('$P$', fontsize=20)
 plt.ylabel('$dW$', fontsize=20)
 
-# 设置刻度字体大小
+
 plt.xticks(fontsize=20)
 plt.yticks(fontsize=20)
 
