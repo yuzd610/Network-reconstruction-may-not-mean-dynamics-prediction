@@ -112,8 +112,8 @@ plt.rcParams['ytick.labelsize'] = 23
 
 
 
-plt.plot(time, d, label=r'DMFT', linestyle='solid', color='red',linewidth=3)  # 将虚线改为实线并设置为红色
-plt.plot(time, mean_d_n, label=r'simulation', linestyle='dashed', color='blue',linewidth=3)  # 设置为蓝色虚线
+plt.plot(time, d, label=r'DMFT', linestyle='solid', color='red',linewidth=3)  
+plt.plot(time, mean_d_n, label=r'simulation', linestyle='dashed', color='blue',linewidth=3)  
 plt.fill_between(time, mean_d_n - std_d_n, mean_d_n + std_d_n, color='blue', alpha=0.2)
 # Set axis labels
 plt.xlabel('Time ', fontsize=23)
