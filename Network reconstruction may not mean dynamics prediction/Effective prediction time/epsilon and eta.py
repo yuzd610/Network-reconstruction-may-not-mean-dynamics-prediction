@@ -4,7 +4,7 @@ from tqdm import tqdm
 import matplotlib
 
 matplotlib.rcParams['font.family'] = 'Times New Roman'
-matplotlib.rcParams['font.size'] = 23  # 可以统一设置字体大小
+matplotlib.rcParams['font.size'] = 23  
 g= 2
 
 
@@ -59,7 +59,7 @@ std_d_n = np.std(ε, axis=1)
 
 
 
-plt.plot(Disturb, mean_d_n, linestyle='dashed', color='blue',linewidth=3)  # 设置为蓝色虚线
+plt.plot(Disturb, mean_d_n, linestyle='dashed', color='blue',linewidth=3) 
 plt.fill_between(Disturb, mean_d_n - std_d_n, mean_d_n + std_d_n, color='blue', alpha=0.2)
 # Set the axis labels and specify the font size
 
