@@ -90,7 +90,7 @@ std_LLE = np.std(LLE, axis=1)
 
 
 
-plt.plot(G, mean_LLE, linestyle='dashed', color='red',linewidth=3)  # 设置为蓝色虚线
+plt.plot(G, mean_LLE, linestyle='dashed', color='red',linewidth=3) 
 plt.fill_between(G, mean_LLE - std_LLE, mean_LLE + std_LLE, color='red', alpha=0.2)
 # Set the axis labels and specify the font size
 plt.xlabel('g ', fontsize=30)
@@ -107,8 +107,8 @@ plt.axvline(x=1, linestyle='dashed', color='black', linewidth=2, label='g = 1')
 plt.tick_params(axis='both', which='major', labelsize=30, length=10, width=2)
 
 # Control the tick interval to ensure that the tick labels do not overlap
-plt.locator_params(axis='x', nbins=5)  # 控制x轴的刻度数量（可根据需要调整）
-plt.locator_params(axis='y', nbins=4)  # 控制y轴的刻度数量（可根据需要调整）
+plt.locator_params(axis='x', nbins=5)  
+plt.locator_params(axis='y', nbins=4)  
 
 
 plt.tight_layout()
