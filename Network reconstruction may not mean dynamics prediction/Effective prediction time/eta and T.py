@@ -80,7 +80,7 @@ print(mean_LLE)
 
 print(Dis)
 
-plt.plot(Dis, mean_LLE, linestyle='dashed', color='blue', linewidth=3)  # 设置为蓝色虚线
+plt.plot(Dis, mean_LLE, linestyle='dashed', color='blue', linewidth=3) 
 plt.fill_between(Dis, mean_LLE - std_LLE, mean_LLE + std_LLE, color='blue', alpha=0.2)
 
 plt.xlabel(r'$\eta$', fontsize=20)
