@@ -42,8 +42,8 @@ plt.axvline(0, color="black", linewidth=0.5, linestyle="--")
 plt.grid(visible=True, linestyle="--", linewidth=0.5)
 
 # Optimize scale
-plt.tick_params(axis='both', which='major', length=6, width=1, direction='in')  # 主刻度
-plt.tick_params(axis='both', which='minor', length=4, width=0.5, direction='in')  # 次刻度
+plt.tick_params(axis='both', which='major', length=6, width=1, direction='in')  
+plt.tick_params(axis='both', which='minor', length=4, width=0.5, direction='in') 
 
 
 plt.tight_layout()
