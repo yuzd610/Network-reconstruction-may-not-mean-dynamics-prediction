@@ -99,7 +99,7 @@ ax2.tick_params(axis='y', labelcolor='g', labelsize=21)
 # Add a legend
 lines, labels = ax1.get_legend_handles_labels()
 lines2, labels2 = ax2.get_legend_handles_labels()
-ax2.legend(lines + lines2, labels + labels2, loc='upper right', fontsize=20)  # 增加图例字体大小
+ax2.legend(lines + lines2, labels + labels2, loc='upper right', fontsize=20)  
 plt.tight_layout()
 fig.savefig('plot.pdf')
 
